@@ -78,6 +78,13 @@
           </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
+        <!-- Add search input here -->
+ <form id="search-form" class="d-flex ms-3">
+  <input type="text" id="search-input" class="form-control" placeholder="Search" onkeyup="searchFunction()" aria-label="Search">
+  <span class="input-group-text" style="cursor: pointer;">
+    <i id="searchIcon" class="bi bi-search"></i>
+  </span>
+</form>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -1174,7 +1181,25 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   
-
+  <script>
+    function searchFunction() {
+      // Get the search input
+      let input = document.getElementById('search-input').value.toLowerCase();
+  
+      // Get all the section headings or elements you want to search through
+      let sections = document.querySelectorAll('section');
+  
+      // Loop through the sections and show or hide based on the search input
+      sections.forEach(section => {
+        const sectionText = section.textContent.toLowerCase();
+        if (sectionText.includes(input)) {
+          section.style.display = 'block'; // Show matching section
+        } else {
+          section.style.display = 'none'; // Hide non-matching section
+        }
+      });
+    }
+  </script>
 
 
 <!-- Include the EmailJS SDK -->
