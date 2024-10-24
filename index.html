@@ -76,15 +76,20 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
+          
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li>
+            <form class="d-flex ms-3" role="search" onsubmit="return false;">
+              <div class="input-group">
+                <input id="searchInput" class="form-control" type="text" placeholder="Search" aria-label="Search">
+                <span class="input-group-text" style="cursor: pointer;" id="searchBtn">
+                  <i id="searchIcon" class="bi bi-search"></i>
+                </span>
+              </div>
+            </form>
+          </li>
         </ul>
-        <!-- Add search input here -->
- <form id="search-form" class="d-flex ms-3">
-  <input type="text" id="search-input" class="form-control" placeholder="Search" onkeyup="searchFunction()" aria-label="Search">
-  <span class="input-group-text" style="cursor: pointer;">
-    <i id="searchIcon" class="bi bi-search"></i>
-  </span>
-</form>
+        
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -152,22 +157,27 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center" data-aos="fade-left" data-aos-delay="100">
+          <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center" data-aos="fade-left"
+            data-aos-delay="100">
             <img src="assets/img/smart-breeze.PNG" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
 
             <!--class="fst-italic"-->
-            
+
             <h2>About the System</h2>
             <p class="justify-text">
-            Smart Breeze is an advanced air conditioning solution designed to intelligently optimize energy efficiency 
-            while enhancing occupant comfort. By leveraging cutting-edge technologies such as machine learning, IoT, 
-            and computer vision, SmartBreeze autonomously adjusts temperature, airflow, and humidity in real-time based on occupancy 
-            and environmental data. Unlike traditional AC systems that rely on manual inputs, Smart Breeze continuously monitors and 
-            adapts to the conditions of the room, ensuring optimal comfort and minimizing energy consumption. With its affordable 
-            yet highly effective design, Smart Breeze is ideal for both commercial and residential settings, offering a cost-effective 
-            way to reduce energy waste while maintaining a pleasant indoor environment.
+              Smart Breeze is an advanced air conditioning solution designed to intelligently optimize energy efficiency
+              while enhancing occupant comfort. By leveraging cutting-edge technologies such as machine learning, IoT,
+              and computer vision, SmartBreeze autonomously adjusts temperature, airflow, and humidity in real-time
+              based on occupancy
+              and environmental data. Unlike traditional AC systems that rely on manual inputs, Smart Breeze
+              continuously monitors and
+              adapts to the conditions of the room, ensuring optimal comfort and minimizing energy consumption. With its
+              affordable
+              yet highly effective design, Smart Breeze is ideal for both commercial and residential settings, offering
+              a cost-effective
+              way to reduce energy waste while maintaining a pleasant indoor environment.
             </p>
           </div>
         </div>
@@ -206,39 +216,45 @@
 
         <div class="row">
           <!-- <div class="image col-lg-6 " style="background-image: url(&quot;assets/img/homepage.PNG&quot;);background-size: auto" data-aos="fade-right"></div> -->
-          <div class="image col-lg-6 " data-aos="fade-right"><img src="assets/img/simulation2.jpg" class="img-fluid" alt="">
+          <div class="image col-lg-6 " data-aos="fade-right"><img src="assets/img/simulation2.jpg" class="img-fluid"
+              alt="">
           </div>
           <div class="col-lg-6 " data-aos="fade-left" data-aos-delay="100">
             <div class="icon-box mt-5 mt-lg-0 " data-aos="zoom-in" data-aos-delay="150">
               <i class="ri-temp-hot-line"></i>
               <h4>Automatic Temperature Adjustment</h4>
-              <p class="justify-text">The system automatically adjusts the room temperature to maintain optimal comfort by considering factors like 
+              <p class="justify-text">The system automatically adjusts the room temperature to maintain optimal comfort
+                by considering factors like
                 occupancy and environmental conditions, without the need for manual input.
               </p>
             </div>
             <div class="icon-box mt-5 " data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-wind"></i>
               <h4>Occupancy-Based Shutter Management</h4>
-              <p class="justify-text">The AC’s airflow is directed based on where people are in the room, ensuring efficient 
+              <p class="justify-text">The AC’s airflow is directed based on where people are in the room, ensuring
+                efficient
                 cooling by focusing air where it's needed most, reducing energy waste.
               </p>
             </div>
             <div class="icon-box mt-5 \" data-aos="zoom-in" data-aos-delay="150">
               <i class="bi bi-fan"></i>
               <h4>Adaptive AC Unit Control</h4>
-              <p class="justify-text">The system intelligently determines how many AC units should be active, adjusting in real-time based on the number of occupants, 
+              <p class="justify-text">The system intelligently determines how many AC units should be active, adjusting
+                in real-time based on the number of occupants,
                 time of day, and room conditions.</p>
             </div>
             <div class="icon-box mt-5 " data-aos="zoom-in" data-aos-delay="150">
               <i class="bi bi-moisture"></i>
               <h4>Self-Adjusting Humidity Control</h4>
-              <p class="justify-text">The system monitors humidity levels and adjusts them automatically to maintain a comfortable and healthy indoor environment.
+              <p class="justify-text">The system monitors humidity levels and adjusts them automatically to maintain a
+                comfortable and healthy indoor environment.
               </p>
             </div>
             <div class="icon-box mt-5 " data-aos="zoom-in" data-aos-delay="150">
               <i class="bi bi-power"></i>
               <h4>Electricity Usage Forecasting</h4>
-              <p class="justify-text">By analyzing patterns in room usage and environmental conditions, the system predicts future electricity consumption, 
+              <p class="justify-text">By analyzing patterns in room usage and environmental conditions, the system
+                predicts future electricity consumption,
                 helping with better energy management and cost control.
               </p>
             </div>
@@ -626,25 +642,41 @@
                     <br>
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                     <p class="justify-text">
-                      In recent years, there has been a growing interest in optimizing air conditioning systems for 
-                      both energy efficiency and user comfort, particularly in warm climates. Many studies have explored various 
-                      methods to enhance the efficiency of AC systems by leveraging machine learning, IoT, and advanced sensors.<br><br>
-                      Several research efforts have focused on occupancy-driven air conditioning systems. Studies have shown that 
-                      incorporating occupancy detection can significantly reduce energy consumption by ensuring that AC units operate 
-                      only when needed. Traditional systems that rely on infrared sensors or high-resolution cameras have proven effective, 
-                      but their high costs make them impractical for many middle-income regions. More affordable solutions, such as using 
+                      In recent years, there has been a growing interest in optimizing air conditioning systems for
+                      both energy efficiency and user comfort, particularly in warm climates. Many studies have explored
+                      various
+                      methods to enhance the efficiency of AC systems by leveraging machine learning, IoT, and advanced
+                      sensors.<br><br>
+                      Several research efforts have focused on occupancy-driven air conditioning systems. Studies have
+                      shown that
+                      incorporating occupancy detection can significantly reduce energy consumption by ensuring that AC
+                      units operate
+                      only when needed. Traditional systems that rely on infrared sensors or high-resolution cameras
+                      have proven effective,
+                      but their high costs make them impractical for many middle-income regions. More affordable
+                      solutions, such as using
                       RGB cameras for occupancy detection, have been proposed to balance cost and efficiency.<br><br>
-                      Another important area of research has centered on real-time temperature and humidity control, with studies 
-                      indicating that user comfort is influenced by both temperature and humidity, as well as airflow. Intelligent 
-                      systems that automatically adjust these factors based on environmental data have been shown to enhance comfort 
-                      while reducing energy consumption. Machine learning algorithms have been explored to optimize this balance by 
+                      Another important area of research has centered on real-time temperature and humidity control,
+                      with studies
+                      indicating that user comfort is influenced by both temperature and humidity, as well as airflow.
+                      Intelligent
+                      systems that automatically adjust these factors based on environmental data have been shown to
+                      enhance comfort
+                      while reducing energy consumption. Machine learning algorithms have been explored to optimize this
+                      balance by
                       continuously learning and improving performance over time.<br><br>
-                      However, there is a noticeable gap in the literature regarding the adaptation of these systems for specific climates, 
-                      particularly tropical regions like Sri Lanka. Most existing studies have focused on temperate climates, and there is 
-                      limited research tailored to the unique environmental and economic challenges faced by tropical regions.<br><br>
-                      SmartBreeze addresses these gaps by incorporating local climate data and providing a cost-effective solution that 
-                      integrates occupancy detection, adaptive AC control, real-time temperature and humidity regulation, and electricity 
-                      usage forecasting. Through this approach, SmartBreeze aims to deliver both energy efficiency and enhanced comfort for 
+                      However, there is a noticeable gap in the literature regarding the adaptation of these systems for
+                      specific climates,
+                      particularly tropical regions like Sri Lanka. Most existing studies have focused on temperate
+                      climates, and there is
+                      limited research tailored to the unique environmental and economic challenges faced by tropical
+                      regions.<br><br>
+                      SmartBreeze addresses these gaps by incorporating local climate data and providing a
+                      cost-effective solution that
+                      integrates occupancy detection, adaptive AC control, real-time temperature and humidity
+                      regulation, and electricity
+                      usage forecasting. Through this approach, SmartBreeze aims to deliver both energy efficiency and
+                      enhanced comfort for
                       users in tropical regions.
                     </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -665,19 +697,31 @@
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
 
                     <p class="justify-text">
-                      The growing demand for energy efficiency in air conditioning (AC) systems, particularly in commercial buildings, 
-                      poses a significant challenge, especially in tropical regions like Sri Lanka, where AC usage is near-constant due 
-                      to climate conditions. Traditional AC systems, which rely on manual inputs and lack real-time responsiveness to occupancy 
-                      and environmental conditions, lead to substantial energy waste and reduced occupant comfort. Although advanced air conditioning 
-                      solutions with object detection and smart controls exist, their high costs, driven by the use of expensive sensors, 
+                      The growing demand for energy efficiency in air conditioning (AC) systems, particularly in
+                      commercial buildings,
+                      poses a significant challenge, especially in tropical regions like Sri Lanka, where AC usage is
+                      near-constant due
+                      to climate conditions. Traditional AC systems, which rely on manual inputs and lack real-time
+                      responsiveness to occupancy
+                      and environmental conditions, lead to substantial energy waste and reduced occupant comfort.
+                      Although advanced air conditioning
+                      solutions with object detection and smart controls exist, their high costs, driven by the use of
+                      expensive sensors,
                       limit their adoption, particularly in middle-income countries.<br><br>
-                      Current systems fail to optimize energy consumption across multiple environmental parameters such as airflow, temperature, and humidity, 
-                      leading to inefficiencies in energy use and occupant discomfort. Moreover, existing cost-effective alternatives do not provide sufficient 
-                      autonomous control over these factors. There is a clear need for a more affordable, intelligent air conditioning system 
-                      that can dynamically adapt to occupancy and environmental changes in real time, balancing energy efficiency with occupant comfort.<br><br>
-                      The research problem thus centers around developing a cost-effective, intelligent air conditioning system that autonomously adjusts temperature, airflow, and humidity 
-                      in response to real-time data on occupancy and environmental conditions. This system must integrate machine learning, IoT, and computer vision technologies, 
-                      utilizing simpler sensors such as RGB cameras for occupancy detection, to provide an accessible solution capable of optimizing both energy efficiency and occupant comfort, 
+                      Current systems fail to optimize energy consumption across multiple environmental parameters such
+                      as airflow, temperature, and humidity,
+                      leading to inefficiencies in energy use and occupant discomfort. Moreover, existing cost-effective
+                      alternatives do not provide sufficient
+                      autonomous control over these factors. There is a clear need for a more affordable, intelligent
+                      air conditioning system
+                      that can dynamically adapt to occupancy and environmental changes in real time, balancing energy
+                      efficiency with occupant comfort.<br><br>
+                      The research problem thus centers around developing a cost-effective, intelligent air conditioning
+                      system that autonomously adjusts temperature, airflow, and humidity
+                      in response to real-time data on occupancy and environmental conditions. This system must
+                      integrate machine learning, IoT, and computer vision technologies,
+                      utilizing simpler sensors such as RGB cameras for occupancy detection, to provide an accessible
+                      solution capable of optimizing both energy efficiency and occupant comfort,
                       without incurring the high costs of current advanced systems.</p>
 
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -697,15 +741,24 @@
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                     <h5 class="card-title">RESEARCH GAP</h5><br>
                     <p class="justify-text">
-                      This research addresses key gaps in existing literature by focusing on thermal comfort and energy efficiency within the 
-                      context of Sri Lanka's unique climate, which has been underexplored in previous studies that primarily focus on foreign 
-                      environments. By utilizing local data, our study provides a tailored solution to improve both thermal comfort and energy 
-                      management specifically for Sri Lankan buildings. A critical aspect that has been overlooked in prior research is the impact 
-                      of architectural features, such as room size and window configurations, on energy consumption and comfort levels. 
-                      This research underscores the importance of these elements, offering new insights into how they influence indoor environments. 
-                      Additionally, while previous studies have often examined temperature or humidity in isolation, our comprehensive approach integrates 
-                      multiple factors—including temperature, humidity, and airflow direction—using occupancy patterns and environmental data to optimize 
-                      comfort and energy use. These contributions deliver a localized, multi-factor solution that advances research in energy-efficient 
+                      This research addresses key gaps in existing literature by focusing on thermal comfort and energy
+                      efficiency within the
+                      context of Sri Lanka's unique climate, which has been underexplored in previous studies that
+                      primarily focus on foreign
+                      environments. By utilizing local data, our study provides a tailored solution to improve both
+                      thermal comfort and energy
+                      management specifically for Sri Lankan buildings. A critical aspect that has been overlooked in
+                      prior research is the impact
+                      of architectural features, such as room size and window configurations, on energy consumption and
+                      comfort levels.
+                      This research underscores the importance of these elements, offering new insights into how they
+                      influence indoor environments.
+                      Additionally, while previous studies have often examined temperature or humidity in isolation, our
+                      comprehensive approach integrates
+                      multiple factors—including temperature, humidity, and airflow direction—using occupancy patterns
+                      and environmental data to optimize
+                      comfort and energy use. These contributions deliver a localized, multi-factor solution that
+                      advances research in energy-efficient
                       air conditioning systems for Sri Lanka.
                     </p>
                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -723,43 +776,59 @@
                   <div class="card-body">
                     <h5 class="card-title">MAIN OBJECTIVE</h5>
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                    <p class="justify-text">Our intelligent air conditioning system is designed to optimize energy efficiency and enhance occupant 
-                      comfort by autonomously regulating temperature, airflow, and humidity in real time. Utilizing smart 
-                      technologies such as IoT and computer vision, the system adapts to occupancy and environmental data, 
+                    <p class="justify-text">Our intelligent air conditioning system is designed to optimize energy
+                      efficiency and enhance occupant
+                      comfort by autonomously regulating temperature, airflow, and humidity in real time. Utilizing
+                      smart
+                      technologies such as IoT and computer vision, the system adapts to occupancy and environmental
+                      data,
                       ensuring that energy is used efficiently without sacrificing comfort.<br><br>
 
                     <h5 class="card-title">Specific Objectives</h5>
                     <h6 class="card-title"><b>Determining the Optimal Number of Active AC Units</b></h6>
-                    The system intelligently determines the ideal number of AC units to activate based on factors like occupancy, 
-                    time of day, temperature, humidity, and room size. This ensures that only the necessary units are active, 
+                    The system intelligently determines the ideal number of AC units to activate based on factors like
+                    occupancy,
+                    time of day, temperature, humidity, and room size. This ensures that only the necessary units are
+                    active,
                     balancing energy efficiency with optimal comfort.<br><br>
 
                     <h6 class="card-title"> <b>Adaptive AC Unit Activation Based on Occupancy Detection</b></h6>
-                    By using motion detection and depth estimation technologies, the system monitors occupancy and adjusts AC unit 
-                    operation in real time. It activates only the necessary units based on the location and number of occupants, 
+                    By using motion detection and depth estimation technologies, the system monitors occupancy and
+                    adjusts AC unit
+                    operation in real time. It activates only the necessary units based on the location and number of
+                    occupants,
                     providing cooling where needed while minimizing energy waste.<br><br>
 
                     <h6 class="card-title"> <b>Dynamic AC Blade Adjustment for Targeted Cooling</b></h6>
-                    The system adjusts the direction of AC blades based on occupancy and room layout. This targeted cooling ensures 
-                    that airflow is directed toward areas with higher occupancy, enhancing comfort while reducing unnecessary energy usage.<br><br>
+                    The system adjusts the direction of AC blades based on occupancy and room layout. This targeted
+                    cooling ensures
+                    that airflow is directed toward areas with higher occupancy, enhancing comfort while reducing
+                    unnecessary energy usage.<br><br>
 
                     <h6 class="card-title"> <b>Optimizing Room Comfort through Adaptive Temperature Control</b></h6>
-                    The system automatically adjusts air conditioning settings to maintain the optimal room temperature. 
-                    It recognizes daily temperature patterns and makes predictions, ensuring energy-efficient operation while keeping 
+                    The system automatically adjusts air conditioning settings to maintain the optimal room temperature.
+                    It recognizes daily temperature patterns and makes predictions, ensuring energy-efficient operation
+                    while keeping
                     the environment comfortable for occupants.</p>
 
                     <h6 class="card-title"> <b>Effective Fan Speed Modification for Optimal Airflow</b></h6>
-                    The system dynamically adjusts fan speed in response to factors such as occupancy, activity levels, temperature, and humidity. 
-                    This optimization ensures that airflow is matched to current conditions, enhancing comfort and minimizing energy waste.</p>
+                    The system dynamically adjusts fan speed in response to factors such as occupancy, activity levels,
+                    temperature, and humidity.
+                    This optimization ensures that airflow is matched to current conditions, enhancing comfort and
+                    minimizing energy waste.</p>
 
                     <h6 class="card-title"> <b>Predicting Optimal Indoor Humidity Levels</b></h6>
-                    The system continuously monitors real-time data on temperature, occupancy, and external weather conditions to control and maintain ideal 
-                    indoor humidity levels. This ensures a comfortable environment while preventing issues like excessive dryness or humidity, all while 
+                    The system continuously monitors real-time data on temperature, occupancy, and external weather
+                    conditions to control and maintain ideal
+                    indoor humidity levels. This ensures a comfortable environment while preventing issues like
+                    excessive dryness or humidity, all while
                     maximizing energy efficiency.</p>
 
                     <h6 class="card-title"> <b>Forecasting AC Electricity Usage</b></h6>
-                    The system includes a feature that forecasts air conditioning electricity consumption based on room size, occupancy, 
-                    and time of day. This proactive approach helps in managing energy consumption more effectively, reducing costs while 
+                    The system includes a feature that forecasts air conditioning electricity consumption based on room
+                    size, occupancy,
+                    and time of day. This proactive approach helps in managing energy consumption more effectively,
+                    reducing costs while
                     ensuring user comfort.</p>
                   </div>
                 </div>
@@ -778,19 +847,31 @@
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
 
                     <p class="justify-text">
-                      The methodology for this research project focuses on developing an AI-enhanced HVAC system that optimizes energy 
-                      efficiency and user comfort, specifically for Sri Lanka's tropical climate. The development of AC systems originated 
-                      from the increasing demand to control the thermal comfort of indoor environments. Moreover, these systems were well 
-                      known for their high energy consumption, which led to a pressing need for more intelligent and efficient solutions. 
-                      The proposed methodology is organized into several stages to achieve energy efficiency while maintaining the optimal 
-                      comfort level by optimizing several important parameters within air conditioning systems. During the proposed work, 
-                      first of all by analyzing previous trends and all, decide how many numbers of ACs should be turned on in order to 
-                      achieve energy efficiency while maintaining the optimal comfort level. Once after the number of Acs defines, which ACs 
-                      should be turned on factor also takes into consideration. After deciding number of ACs and which ACs, now it’s time to 
-                      focus on the important factors like airflow, temperature and humidity. Adjust the airflow based on 
-                      the occupant presence, controlling room temperature based on several environmental factors and at the same time 
-                      control the fan speed to adjust the room temperature for its ideal level and also control the relative humidity 
-                      inside the space automatically without manual intervention, makes the proposed work unique and a sustainable solution.</p>
+                      The methodology for this research project focuses on developing an AI-enhanced HVAC system that
+                      optimizes energy
+                      efficiency and user comfort, specifically for Sri Lanka's tropical climate. The development of AC
+                      systems originated
+                      from the increasing demand to control the thermal comfort of indoor environments. Moreover, these
+                      systems were well
+                      known for their high energy consumption, which led to a pressing need for more intelligent and
+                      efficient solutions.
+                      The proposed methodology is organized into several stages to achieve energy efficiency while
+                      maintaining the optimal
+                      comfort level by optimizing several important parameters within air conditioning systems. During
+                      the proposed work,
+                      first of all by analyzing previous trends and all, decide how many numbers of ACs should be turned
+                      on in order to
+                      achieve energy efficiency while maintaining the optimal comfort level. Once after the number of
+                      Acs defines, which ACs
+                      should be turned on factor also takes into consideration. After deciding number of ACs and which
+                      ACs, now it’s time to
+                      focus on the important factors like airflow, temperature and humidity. Adjust the airflow based on
+                      the occupant presence, controlling room temperature based on several environmental factors and at
+                      the same time
+                      control the fan speed to adjust the room temperature for its ideal level and also control the
+                      relative humidity
+                      inside the space automatically without manual intervention, makes the proposed work unique and a
+                      sustainable solution.</p>
                   </div>
                 </div>
               </div>
@@ -884,7 +965,7 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-  
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container aos-init aos-animate" data-aos="fade-up">
@@ -976,8 +1057,7 @@
                 <img src="assets/img/jenny.png" class="img-fluid" alt="">
                 <div class="social">
                   <a href="mailto:jenny.k@sliit.lk"><i class="bi bi-envelope-fill"></i></a>
-                  <a href="https://www.linkedin.com/in/jenny-krishara-1a09a0111/"><i
-                      class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/jenny-krishara-1a09a0111/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -1062,26 +1142,26 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
             <form id="contact-form">
               <div class="row">
-                  <div class="col-md-6 form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                  </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
               </div>
               <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
-                  <div class="loading" style="display: none;">Loading</div>
-                  <div class="error-message" style="display: none;"></div>
-                  <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                <div class="loading" style="display: none;">Loading</div>
+                <div class="error-message" style="display: none;"></div>
+                <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
+            </form>
 
           </div>
 
@@ -1180,66 +1260,69 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+
   <script>
-    function searchFunction() {
-      // Get the search input
-      let input = document.getElementById('search-input').value.toLowerCase();
-  
-      // Get all the section headings or elements you want to search through
-      let sections = document.querySelectorAll('section');
-  
-      // Loop through the sections and show or hide based on the search input
-      sections.forEach(section => {
-        const sectionText = section.textContent.toLowerCase();
-        if (sectionText.includes(input)) {
-          section.style.display = 'block'; // Show matching section
+    document.getElementById('searchBtn').addEventListener('click', function() {
+        // Get the search input value
+        const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        
+        // Define the sections to search through
+        const sections = ['hero', 'about', 'clients','features','documents','presentations','milestones','domain','team','contact']; // Add your section IDs here
+        
+        // Find a matching section
+        const matchedSection = sections.find(section => section.includes(searchInput));
+        
+        // If a match is found, scroll to that section
+        if (matchedSection) {
+            document.getElementById(matchedSection).scrollIntoView({
+                behavior: 'smooth'  // Smooth scrolling
+            });
         } else {
-          section.style.display = 'none'; // Hide non-matching section
+            alert('No matching section found');
         }
-      });
-    }
-  </script>
-
-
-<!-- Include the EmailJS SDK -->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-// Initialize EmailJS with your user ID
-(function(){
-    emailjs.init("C3Vk-CvBp_l0ckhO8"); // Replace with your user ID
-})();
-
-// Handle form submission
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Show loading message and hide others
-    document.querySelector('.loading').style.display = 'block';
-    document.querySelector('.sent-message').style.display = 'none';
-    document.querySelector('.error-message').style.display = 'none';
-
-    // Send the email using EmailJS
-    emailjs.sendForm('service_u5y65x5', 'template_97fmwml', this)
-        .then(function() {
-            // Hide loading and show success message
-            document.querySelector('.loading').style.display = 'none';
-            document.querySelector('.sent-message').style.display = 'block';
-            document.getElementById('contact-form').reset(); // Reset the form
-
-            // Hide the success message after 1.5 seconds
-            setTimeout(function() {
-                document.querySelector('.sent-message').style.display = 'none';
-            }, 1500); // 1500 milliseconds = 1.5 seconds
-        }, function(error) {
-            // Hide loading and show error message
-            document.querySelector('.loading').style.display = 'none';
-            document.querySelector('.error-message').innerHTML = 'Failed to send message. Error: ' + JSON.stringify(error);
-            document.querySelector('.error-message').style.display = 'block';
-            console.error('FAILED...', error); // Log the error to the console
-        });
-});
+    });
 </script>
+  
+
+
+  <!-- Include the EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    // Initialize EmailJS with your user ID
+    (function () {
+      emailjs.init("C3Vk-CvBp_l0ckhO8"); // Replace with your user ID
+    })();
+
+    // Handle form submission
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Show loading message and hide others
+      document.querySelector('.loading').style.display = 'block';
+      document.querySelector('.sent-message').style.display = 'none';
+      document.querySelector('.error-message').style.display = 'none';
+
+      // Send the email using EmailJS
+      emailjs.sendForm('service_u5y65x5', 'template_97fmwml', this)
+        .then(function () {
+          // Hide loading and show success message
+          document.querySelector('.loading').style.display = 'none';
+          document.querySelector('.sent-message').style.display = 'block';
+          document.getElementById('contact-form').reset(); // Reset the form
+
+          // Hide the success message after 1.5 seconds
+          setTimeout(function () {
+            document.querySelector('.sent-message').style.display = 'none';
+          }, 1500); // 1500 milliseconds = 1.5 seconds
+        }, function (error) {
+          // Hide loading and show error message
+          document.querySelector('.loading').style.display = 'none';
+          document.querySelector('.error-message').innerHTML = 'Failed to send message. Error: ' + JSON.stringify(error);
+          document.querySelector('.error-message').style.display = 'block';
+          console.error('FAILED...', error); // Log the error to the console
+        });
+    });
+  </script>
 
 </body>
 
